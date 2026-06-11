@@ -30,6 +30,7 @@
             </div>
           </a>
 
+          <!-- Desktop navigation links start here. -->
           <div class="hidden md:flex space-x-8">
             <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 bg-blue-800 text-white" href="./index.html">Home</a>
             <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./comitee.html">Committee</a>
@@ -39,6 +40,36 @@
             <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./poster.html">Poster</a>
             <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./photo.html">Photo</a>
           </div>
+
+          <!-- Mobile menu button starts here. -->
+          <button
+            id="mobile-menu-button"
+            type="button"
+            class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-blue-100 hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Open main navigation menu"
+          >
+            <svg id="mobile-menu-open-icon" class="block h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="mobile-menu-close-icon" class="hidden h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile navigation links start here. -->
+      <div id="mobile-menu" class="hidden md:hidden border-t border-blue-800 bg-blue-900">
+        <div class="space-y-1 px-4 pb-4 pt-3">
+          <a class="block px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 bg-blue-700 text-white" href="./index.html">Home</a>
+          <a class="block px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./comitee.html">Committee</a>
+          <a class="block px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./program.html">Program</a>
+          <a class="block px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./keynote.html">Keynote</a>
+          <a class="block px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./panel.html">Panel</a>
+          <a class="block px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./poster.html">Poster</a>
+          <a class="block px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./photo.html">Photo</a>
         </div>
       </div>
     </nav>
@@ -318,5 +349,33 @@
     </footer>
 
   </div>
+  <!-- Mobile navigation script starts here. -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuOpenIcon = document.getElementById('mobile-menu-open-icon');
+      const mobileMenuCloseIcon = document.getElementById('mobile-menu-close-icon');
+
+      if (!mobileMenuButton || !mobileMenu) return;
+
+      mobileMenuButton.addEventListener('click', () => {
+        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+
+        mobileMenuButton.setAttribute('aria-expanded', String(!isExpanded));
+        mobileMenu.classList.toggle('hidden');
+
+        if (mobileMenuOpenIcon) {
+          mobileMenuOpenIcon.classList.toggle('hidden');
+          mobileMenuOpenIcon.classList.toggle('block');
+        }
+
+        if (mobileMenuCloseIcon) {
+          mobileMenuCloseIcon.classList.toggle('hidden');
+          mobileMenuCloseIcon.classList.toggle('block');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
