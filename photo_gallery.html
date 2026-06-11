@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./logos/Logo.png" />
+  <title>Conference Photos - FEW-AI 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Gallery view of conference photos for the FEW-AI 2026 International Workshop." />
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <!-- This block contains the main navigation bar shared across the website. -->
+  <nav class="bg-blue-900 shadow-lg sticky top-0 z-50" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a class="flex items-center space-x-3" href="./index.html" aria-label="FEW-AI 2026 Home">
+          <img src="./logos/Logo.png" alt="FEW Nexus 2026 Logo" class="w-10 h-10 object-contain" />
+          <div class="text-white">
+            <div class="font-bold text-lg">FEW-AI 2026</div>
+            <div class="text-xs text-blue-200">AI for Sustainable Systems</div>
+          </div>
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./index.html">Home</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./comitee.html">Committee</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./program.html">Program</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./keynote.html">Keynote</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./panel.html">Panel</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./poster.html">Poster</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 bg-blue-800 text-white" href="./photo.html">Photo</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- This block contains the photos page header and view switcher. -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <div>
+          <h1 class="text-3xl font-bold text-gray-900">Conference Photos</h1>
+          <p class="text-gray-600 mt-1">Memorable moments from 2026 FEW-AI</p>
+          <p class="mt-2">
+            <a href="https://drive.google.com/drive/folders/1vg0N8gaq-4EEUTuMNQvz0sp0lzzF2Jm6?usp=sharing?usp=drive_link" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline inline-flex items-center gap-1 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+              All photos
+            </a>
+          </p>
+        </div>
+        
+        <!-- This block contains the timeline/gallery view navigation. -->
+        <div class="flex bg-gray-100 rounded-lg p-1 font-medium shadow-inner">
+          <a href="./photo.html" class="flex items-center px-4 py-2 rounded-md text-sm text-gray-600 hover:text-gray-900 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M3 12h.01"></path><path d="M3 18h.01"></path><path d="M3 6h.01"></path><path d="M8 12h13"></path><path d="M8 18h13"></path><path d="M8 6h13"></path></svg>
+            Timeline View
+          </a>
+          <a href="./photo_gallery.html" class="flex items-center px-4 py-2 rounded-md text-sm bg-white text-blue-600 shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M3 15h18"></path><path d="M9 3v18"></path><path d="M15 3v18"></path></svg>
+            Gallery View
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- This block contains the full photo gallery grid. -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+      
+      <!-- This repeated block defines one gallery photo card. -->
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/setup1.jpg" alt="Setup1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Setup1</h3>
+        <p class="text-xs text-gray-500">09:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/setup2.jpg" alt="Setup2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Setup2</h3>
+        <p class="text-xs text-gray-500">09:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/setup3.jpg" alt="Setup3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Setup3</h3>
+        <p class="text-xs text-gray-500">09:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/setup4.JPG" alt="Setup4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Setup4</h3>
+        <p class="text-xs text-gray-500">09:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Open.jpg" alt="Open" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Open</h3>
+        <p class="text-xs text-gray-500">10:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Open3.jpg" alt="Open3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Open3</h3>
+        <p class="text-xs text-gray-500">10:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/open1.jpg" alt="Open1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Open1</h3>
+        <p class="text-xs text-gray-500">10:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/open4.jpg" alt="Open4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Open4</h3>
+        <p class="text-xs text-gray-500">10:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/open5.jpg" alt="Open5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Open5</h3>
+        <p class="text-xs text-gray-500">10:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote1_1.jpg" alt="Keynote1 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote1 1</h3>
+        <p class="text-xs text-gray-500">10:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote1_2.jpg" alt="Keynote1 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote1 2</h3>
+        <p class="text-xs text-gray-500">10:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote1_3.jpg" alt="Keynote1 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote1 3</h3>
+        <p class="text-xs text-gray-500">10:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote1_4.jpg" alt="Keynote1 4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote1 4</h3>
+        <p class="text-xs text-gray-500">10:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote1_5.jpg" alt="Keynote1 5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote1 5</h3>
+        <p class="text-xs text-gray-500">10:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Coffeebreak.jpg" alt="Coffeebreak" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Coffeebreak</h3>
+        <p class="text-xs text-gray-500">11:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Coffeebreak2.jpg" alt="Coffeebreak2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Coffeebreak2</h3>
+        <p class="text-xs text-gray-500">11:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Coffeebreak3.jpg" alt="Coffeebreak3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Coffeebreak3</h3>
+        <p class="text-xs text-gray-500">11:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Coffeebreak4.jpg" alt="Coffeebreak4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Coffeebreak4</h3>
+        <p class="text-xs text-gray-500">11:30</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote3_1.jpg" alt="Keynote3 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote3 1</h3>
+        <p class="text-xs text-gray-500">12:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote3_2.jpg" alt="Keynote3 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote3 2</h3>
+        <p class="text-xs text-gray-500">12:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote3_3.jpg" alt="Keynote3 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote3 3</h3>
+        <p class="text-xs text-gray-500">12:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote3_4.jpg" alt="Keynote3 4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote3 4</h3>
+        <p class="text-xs text-gray-500">12:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote3_5.jpg" alt="Keynote3 5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote3 5</h3>
+        <p class="text-xs text-gray-500">12:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote3_6.jpg" alt="Keynote3 6" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote3 6</h3>
+        <p class="text-xs text-gray-500">12:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote2_1.jpg" alt="Keynote2 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote2 1</h3>
+        <p class="text-xs text-gray-500">10:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote2_2.jpg" alt="Keynote2 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote2 2</h3>
+        <p class="text-xs text-gray-500">10:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote2_3.jpg" alt="Keynote2 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote2 3</h3>
+        <p class="text-xs text-gray-500">10:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote2_4.jpg" alt="Keynote2 4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote2 4</h3>
+        <p class="text-xs text-gray-500">10:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote2_5.jpg" alt="Keynote2 5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote2 5</h3>
+        <p class="text-xs text-gray-500">10:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_1.jpg" alt="Panel1 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 1</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_2.jpg" alt="Panel1 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 2</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_3.jpg" alt="Panel1 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 3</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_4.jpg" alt="Panel1 4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 4</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_5.jpg" alt="Panel1 5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 5</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_6.jpg" alt="Panel1 6" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 6</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_7.jpg" alt="Panel1 7" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 7</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_8.jpg" alt="Panel1 8" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 8</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_9.jpg" alt="Panel1 9" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 9</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_10.jpg" alt="Panel1 10" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 10</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_11.jpg" alt="Panel1 11" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 11</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_12.jpg" alt="Panel1 12" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 12</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_13.jpg" alt="Panel1 13" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 13</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel1_14.jpg" alt="Panel1 14" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel1 14</h3>
+        <p class="text-xs text-gray-500">11:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote4_1.jpg" alt="Keynote4 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote4 1</h3>
+        <p class="text-xs text-gray-500">12:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote4_2.jpg" alt="Keynote4 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote4 2</h3>
+        <p class="text-xs text-gray-500">12:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/keynote4_3.jpg" alt="Keynote4 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Keynote4 3</h3>
+        <p class="text-xs text-gray-500">12:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_1.jpg" alt="Panel2 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 1</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_2.jpg" alt="Panel2 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 2</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_3.jpg" alt="Panel2 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 3</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_4.jpg" alt="Panel2 4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 4</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_5.jpg" alt="Panel2 5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 5</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_6.jpg" alt="Panel2 6" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 6</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_7.jpg" alt="Panel2 7" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 7</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_8.jpg" alt="Panel2 8" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 8</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_9.jpg" alt="Panel2 9" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 9</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_10.jpg" alt="Panel2 10" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 10</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Panel2_11.jpg" alt="Panel2 11" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Panel2 11</h3>
+        <p class="text-xs text-gray-500">15:00-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Poster1.JPG" alt="Poster1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Poster1</h3>
+        <p class="text-xs text-gray-500">15:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Poster2.JPG" alt="Poster2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Poster2</h3>
+        <p class="text-xs text-gray-500">15:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Poster3.JPG" alt="Poster3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Poster3</h3>
+        <p class="text-xs text-gray-500">15:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Poster4.JPG" alt="Poster4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Poster4</h3>
+        <p class="text-xs text-gray-500">15:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Poster5.JPG" alt="Poster5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Poster5</h3>
+        <p class="text-xs text-gray-500">15:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Poster6.JPG" alt="Poster6" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Poster6</h3>
+        <p class="text-xs text-gray-500">15:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Poster7.JPG" alt="Poster7" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Poster7</h3>
+        <p class="text-xs text-gray-500">15:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Poster8.JPG" alt="Poster8" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Poster8</h3>
+        <p class="text-xs text-gray-500">15:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Poster9.JPG" alt="Poster9" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Poster9</h3>
+        <p class="text-xs text-gray-500">15:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/Poster10.jpg" alt="Poster10" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Poster10</h3>
+        <p class="text-xs text-gray-500">15:30-day2</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/venue1.jpg" alt="Venue1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Venue1</h3>
+        <p class="text-sm text-gray-600">16:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/venue2.jpg" alt="Venue2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Venue2</h3>
+        <p class="text-sm text-gray-600">16:00</p>
+      </div>
+
+      <div class="group cursor-pointer bg-white p-3 rounded-lg shadow-md border border-gray-100 text-center">
+        <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-2">
+          <img src="./gallery/venue3.jpg" alt="Venue3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
+        </div>
+        <h3 class="font-medium text-gray-800 text-sm">Venue3</h3>
+        <p class="text-sm text-gray-600">16:00</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- This block contains the shared page footer. -->
+  <footer class="bg-blue-900 text-white py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+        <p class="text-blue-200 text-sm">© 2026 FEW-AI Workshop - International Workshop on Data Science and AI for Sustainable Food-Energy-Water Nexus. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

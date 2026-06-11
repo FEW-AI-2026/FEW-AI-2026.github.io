@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./logos/Logo.png" />
+  <title>Conference Photos - FEW-AI 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Timeline view of conference photos for the FEW-AI 2026 International Workshop." />
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <!-- This block contains the main navigation bar shared across the website. -->
+  <nav class="bg-blue-900 shadow-lg sticky top-0 z-50" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a class="flex items-center space-x-3" href="./index.html" aria-label="FEW-AI 2026 Home">
+          <img src="./logos/Logo.png" alt="FEW Nexus 2026 Logo" class="w-10 h-10 object-contain" />
+          <div class="text-white">
+            <div class="font-bold text-lg">FEW-AI 2026</div>
+            <div class="text-xs text-blue-200">AI for Sustainable Systems</div>
+          </div>
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./index.html">Home</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./comitee.html">Committee</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./program.html">Program</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./keynote.html">Keynote</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./panel.html">Panel</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 text-blue-100 hover:bg-blue-800 hover:text-white" href="./poster.html">Poster</a>
+          <a class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 bg-blue-800 text-white" href="./photo.html">Photo</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- This block contains the photos page header and view switcher. -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <div>
+          <h1 class="text-3xl font-bold text-gray-900">Conference Photos</h1>
+          <p class="text-gray-600 mt-1">Memorable moments from 2026 FEW-AI</p>
+          <p class="mt-2">
+            <a href="https://drive.google.com/drive/folders/1vg0N8gaq-4EEUTuMNQvz0sp0lzzF2Jm6?usp=sharing?usp=drive_link" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline inline-flex items-center gap-1 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+              All photos
+            </a>
+          </p>
+        </div>
+        
+        <!-- This block contains the timeline/gallery view navigation. -->
+        <div class="flex bg-gray-100 rounded-lg p-1 font-medium shadow-inner">
+          <a href="./photo.html" class="flex items-center px-4 py-2 rounded-md text-sm bg-white text-blue-600 shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><path d="M3 12h.01"></path><path d="M3 18h.01"></path><path d="M3 6h.01"></path><path d="M8 12h13"></path><path d="M8 18h13"></path><path d="M8 6h13"></path></svg>
+            Timeline View
+          </a>
+          <a href="./photo_gallery.html" class="flex items-center px-4 py-2 rounded-md text-sm text-gray-600 hover:text-gray-900 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M3 15h18"></path><path d="M9 3v18"></path><path d="M15 3v18"></path></svg>
+            Gallery View
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- This block contains the timeline photo layout. -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="relative border-l-2 border-blue-200 ml-4 md:ml-6 space-y-12 pl-6 md:pl-8">
+
+      <!-- This repeated block defines one timeline event with its photo group. -->
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-blue-600 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Venue Setup</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 13 - 09:30</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">Staff conducting final venue setup and equipment testing</p>
+          <!-- This repeated block contains the photos for one timeline event. -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/setup1.jpg" alt="Setup 1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/setup2.jpg" alt="Setup 2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/setup3.jpg" alt="Setup 3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/setup4.JPG" alt="Setup 4" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-blue-600 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Opening Session</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 13 - 10:00</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">Conference officially begins, attendees arriving at the venue</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/Open.jpg" alt="Opening 1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Open3.jpg" alt="Opening 2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/open1.jpg" alt="Opening 3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/open4.jpg" alt="Opening 4" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/open5.jpg" alt="Opening 5" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-blue-600 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Keynote 1: Dr. Yu Ding</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 13 - 10:30</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">Data Science for Wind Energy - Online session tracking</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/keynote1_1.jpg" alt="Keynote 1-1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote1_2.jpg" alt="Keynote 1-2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote1_3.jpg" alt="Keynote 1-3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote1_4.jpg" alt="Keynote 1-4" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote1_5.jpg" alt="Keynote 1-5" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-blue-600 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Coffee Break & Networking</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 13 - 11:30</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">Attendees networking and enjoying refreshments</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/Coffeebreak.jpg" alt="Coffee Break 1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Coffeebreak2.jpg" alt="Coffee Break 2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Coffeebreak3.jpg" alt="Coffee Break 3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Coffeebreak4.jpg" alt="Coffee Break 4" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-blue-600 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Keynote 3: Dr. Kai Sonder</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 13 - 12:00</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">Brave new world, use of AI in agricultural research session development</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/keynote3_1.jpg" alt="Keynote 3-1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote3_2.jpg" alt="Keynote 3-2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote3_3.jpg" alt="Keynote 3-3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote3_4.jpg" alt="Keynote 3-4" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote3_5.jpg" alt="Keynote 3-5" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote3_6.jpg" alt="Keynote 3-6" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-blue-600 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Venue Atmosphere</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 13 - 16:00</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">Conference venue environment and interactions during the afternoon track</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/venue1.jpg" alt="Venue 1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/venue2.jpg" alt="Venue 2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/venue3.jpg" alt="Venue 3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-green-700 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6 border-t-2 border-green-500">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Keynote 2: Dr. Juan Humberto Sossa Azuela</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 14 - 10:30</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">AI, Metaverse and Education - Immersive presentation track</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/keynote2_1.jpg" alt="Keynote 2-1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote2_2.jpg" alt="Keynote 2-2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote2_3.jpg" alt="Keynote 2-3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote2_4.jpg" alt="Keynote 2-4" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote2_5.jpg" alt="Keynote 2-5" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-green-700 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6 border-t-2 border-green-500">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Panel 1: Education in the AI Era</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 14 - 11:30</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">Expert discussion and round table coverage</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/Panel1_1.jpg" alt="Panel 1-1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_2.jpg" alt="Panel 1-2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_3.jpg" alt="Panel 1-3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_4.jpg" alt="Panel 1-4" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_5.jpg" alt="Panel 1-5" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_6.jpg" alt="Panel 1-6" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_7.jpg" alt="Panel 1-7" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_8.jpg" alt="Panel 1-8" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_9.jpg" alt="Panel 1-9" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_10.jpg" alt="Panel 1-10" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_11.jpg" alt="Panel 1-11" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_12.jpg" alt="Panel 1-12" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_13.jpg" alt="Panel 1-13" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel1_14.jpg" alt="Panel 1-14" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-green-700 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6 border-t-2 border-green-500">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Keynote 4: Dr. Xiaoou Li</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 14 - 12:00</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">Navigating the Data Gaps Framework - Research showcase tracking</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/keynote4_1.jpg" alt="Keynote 4-1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote4_2.jpg" alt="Keynote 4-2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/keynote4_3.jpg" alt="Keynote 4-3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-green-700 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6 border-t-2 border-green-500">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Panel 2: Opportunities for AI Application in Mexico</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 14 - 15:00</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">Expert discussion mapping across Industry, Health and Agricultural fields</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/Panel2_1.jpg" alt="Panel 2-1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel2_2.jpg" alt="Panel 2-2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel2_3.jpg" alt="Panel 2-3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel2_4.jpg" alt="Panel 2-4" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel2_5.jpg" alt="Panel 2-5" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel2_6.jpg" alt="Panel 2-6" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel2_7.jpg" alt="Panel 2-7" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel2_8.jpg" alt="Panel 2-8" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel2_9.jpg" alt="Panel 2-9" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel2_10.jpg" alt="Panel 2-10" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Panel2_11.jpg" alt="Panel 2-11" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-[38px] md:-left-[46px] top-1 bg-green-700 rounded-full w-6 h-6 flex items-center justify-center border-4 border-white shadow"></div>
+        <div class="bg-white rounded-lg shadow-md p-6 border-t-2 border-green-500">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900">Poster Session</h3>
+            <span class="text-sm font-medium text-gray-500">2026 Oct 14 - 15:30</span>
+          </div>
+          <p class="text-gray-600 mb-4 text-sm">Research poster presentations and academic discussions roll</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <img src="./gallery/Poster1.JPG" alt="Poster 1" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Poster2.JPG" alt="Poster 2" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Poster3.JPG" alt="Poster 3" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Poster4.JPG" alt="Poster 4" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Poster5.JPG" alt="Poster 5" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Poster6.JPG" alt="Poster 6" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Poster7.JPG" alt="Poster 7" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Poster8.JPG" alt="Poster 8" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Poster9.JPG" alt="Poster 9" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+            <img src="./gallery/Poster10.jpg" alt="Poster 10" class="aspect-square rounded-lg object-cover shadow-sm hover:scale-105 transition-transform duration-300 cursor-pointer" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- This block contains the shared page footer. -->
+  <footer class="bg-blue-900 text-white py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm text-blue-200">
+      © 2026 FEW-AI Workshop - International Workshop on Data Science and AI for Sustainable Food-Energy-Water Nexus. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
